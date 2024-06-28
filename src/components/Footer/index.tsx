@@ -1,28 +1,29 @@
-import { GithubOutlined } from '@ant-design/icons';
-import { DefaultFooter } from '@ant-design/pro-components';
+import {GithubOutlined} from '@ant-design/icons';
+import {DefaultFooter} from '@ant-design/pro-components';
+
 const Footer: React.FC = () => {
-  const defaultMessage = '蚂蚁集团体验技术部出品';
+  const defaultMessage = 'Ding Jiaxiong 出品';
   const currentYear = new Date().getFullYear();
   return (
     <DefaultFooter
       copyright={`${currentYear} ${defaultMessage}`}
       links={[
         {
-          key: 'Ant Design Pro',
-          title: 'Ant Design Pro',
-          href: 'https://pro.ant.design',
+          key: 'user_center_frontend',
+          title: 'user_center_frontend',
+          href: 'https://github.com/Ding-Jiaxiong/user_center_frontend',
           blankTarget: true,
         },
         {
           key: 'github',
-          title: <GithubOutlined />,
-          href: 'https://github.com/ant-design/ant-design-pro',
+          title: <><GithubOutlined/> Ding Jiaxiong GitHub</>,
+          href: 'https://github.com/Ding-Jiaxiong',
           blankTarget: true,
         },
         {
-          key: 'Ant Design',
-          title: 'Ant Design',
-          href: 'https://ant.design',
+          key: 'user_center_backend',
+          title: 'user_center_backend',
+          href: 'https://github.com/Ding-Jiaxiong/user_center_backend',
           blankTarget: true,
         },
       ]}
